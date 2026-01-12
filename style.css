@@ -1,0 +1,164 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f8fafc;color:#020617}
+
+:root{
+  --dark:#020617;
+  --gold:#c9a227;
+  --gray:#64748b;
+}
+
+/* HEADER */
+header{
+  position:fixed;top:0;width:100%;
+  background:var(--dark);
+  padding:16px 40px;
+  display:flex;justify-content:space-between;align-items:center;
+  z-index:999;
+}
+.logo{height:60px}
+nav a{color:#cbd5e1;margin-left:26px;text-decoration:none;font-size:.9rem}
+.btn-booking{
+  background:var(--gold);color:#000;
+  padding:10px 22px;border-radius:30px;font-weight:600
+}
+
+/* GLOBAL */
+section{padding:120px 40px;scroll-margin-top:120px}
+.container{max-width:1200px;margin:auto}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  background:linear-gradient(135deg,#020617,#0b1220);
+  display:flex;align-items:center;color:#fff;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.1fr .9fr;
+  gap:60px;align-items:center
+}
+.hero-text h1{font-size:3rem;line-height:1.2;margin-bottom:20px}
+.hero-text p{color:#cbd5e1;margin-bottom:34px}
+.btn-primary{
+  display:inline-block;
+  padding:14px 36px;
+  background:var(--gold);
+  color:#000;border-radius:50px;font-weight:600
+}
+.hero-image img{
+  width:100%;border-radius:28px;
+  box-shadow:0 40px 90px rgba(0,0,0,.45)
+}
+
+/* ABOUT */
+.section-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:70px;align-items:center
+}
+.section-tag{
+  font-size:.75rem;color:var(--gold);
+  letter-spacing:1px;text-transform:uppercase
+}
+.section-text h2{font-size:2.3rem;margin:14px 0 24px}
+.section-text p{color:var(--gray);margin-bottom:18px}
+.section-image img{
+  width:100%;border-radius:30px;
+  box-shadow:0 30px 70px rgba(0,0,0,.15)
+}
+
+/* SERVICES */
+.soft-bg{background:#f1f5f9}
+.section-header{margin-bottom:70px}
+.section-header.center{text-align:center}
+.section-header.light{color:#fff}
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px
+}
+.service-card{
+  background:#fff;
+  padding:40px;
+  border-radius:28px;
+  box-shadow:0 25px 60px rgba(0,0,0,.08)
+}
+.service-card p{color:var(--gray)}
+
+/* CONTACT */
+.contact-section{
+  background:linear-gradient(135deg,#020617,#020617);
+  color:#fff;
+}
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:60px
+}
+.contact-box{
+  background:#fff;color:#020617;
+  padding:50px;border-radius:32px;
+  box-shadow:0 40px 100px rgba(0,0,0,.4)
+}
+.contact-box h3{
+  font-size:1.6rem;
+  margin-bottom:36px;
+}
+
+/* CONTACT INFO FIX */
+.contact-info{
+  padding:56px 60px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.contact-item{
+  margin-bottom:32px;
+}
+
+.contact-item:last-child{
+  margin-bottom:0;
+}
+
+.label{
+  display:block;
+  font-size:.8rem;
+  color:var(--gray);
+  margin-bottom:8px;
+  letter-spacing:.5px;
+}
+
+.value{
+  display:block;
+  font-size:.95rem;
+  margin-bottom:6px;
+}
+
+
+/* FORM */
+.input-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+input,textarea{
+  width:100%;padding:16px 18px;
+  border-radius:16px;border:1px solid #e5e7eb
+}
+button{
+  margin-top:26px;width:100%;
+  padding:16px;border:none;
+  border-radius:50px;
+  background:#020617;color:#fff;font-weight:600
+}
+
+/* FOOTER */
+footer{
+  background:#020617;
+  color:#cbd5e1;
+  text-align:center;
+  padding:26px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-grid,.section-grid,.contact-grid{
+    grid-template-columns:1fr;
+  }
+  .hero-text h1{font-size:2.3rem}
+  .contact-info{padding:40px 32px}
+  .value{font-size:1.05rem}
+}
