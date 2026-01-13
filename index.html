@@ -10,14 +10,9 @@
 </head>
 <body>
 
-  <nav>
-  <a href="./">Home</a>
-  <a href="booking/index.html">Booking</a>
-  <a href="chkf/">Check Point</a>
-</nav>
 
 <header>
-  <img src="assets/images/Logo.png" class="logo">
+  <img src="images/Logo.png" class="logo">
   <nav>
     <a href="#home">Home</a>
     <a href="#about">Tentang Kami</a>
@@ -27,6 +22,16 @@
   </nav>
 </header>
 
+<!-- Pop-up Cek Lebih Lanjut -->
+<div id="popup" style="display:none;">
+  <div id="popupContent" style="background:white;padding:30px 40px;border-radius:20px;
+      max-width:400px;margin:100px auto;position:relative;text-align:center;">
+    <span id="close" style="position:absolute;top:10px;right:15px;cursor:pointer;font-size:22px;font-weight:bold">&times;</span>
+    <p>Temukan lebih banyak informasi menarik dengan mengeklik tombol Cek Lanjut. Di sini, kamu akan dibawa ke detail lengkap mengenai layanan kami, termasuk penjelasan mendalam, contoh hasil pekerjaan, dan berbagai opsi yang bisa disesuaikan dengan kebutuhanmu. Setiap bagian dirancang untuk memberikan gambaran jelas dan komprehensif, sehingga kamu bisa memahami sepenuhnya apa yang kami tawarkan. Jangan lewatkan kesempatan untuk mengetahui keunggulan, keunikan, dan berbagai manfaat yang bisa kamu dapatkan. Klik sekarang dan jelajahi semua informasi penting yang telah kami rangkum khusus untukmu.</p>
+  </div>
+</div>
+
+
 <!-- HOME -->
 <section id="home" class="hero">
   <div class="container hero-grid">
@@ -35,13 +40,14 @@
       <p>
         Wujudkan Momen Seru Jadi Kenangan Estetik.
       </p>
-      <a href="#" class="btn-primary">Cek Lebih Lanjut</a>
+      <a href="#" id="ceklebihlanjut" class="btn-primary">Cek Lebih Lanjut</a>
     </div>
     <div class="hero-image">
-      <img src="assets/images/KCS.png">
+      <img src="images/KCS.png">
     </div>
   </div>
 </section>
+
 
 <!-- ABOUT -->
 <section id="about">
